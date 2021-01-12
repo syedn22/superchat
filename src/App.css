@@ -52,7 +52,7 @@ main::-webkit-scrollbar-track {
 }
 
 main::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: #fca311;
 }
 
 form {
@@ -107,6 +107,14 @@ button:disabled {
   margin: 15px auto;
 }
 
+.sign-out {
+  color: #000;
+  background: #fca311;
+  /* max-width: 200px;
+  max-height: 100px;
+  position: relative; */
+}
+
 ul,
 li {
   text-align: left;
@@ -152,4 +160,11 @@ img {
 
 h1 {
   color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .sign-out {
+    background-color: #fca311;
+    font-size: 15px;
+  }
 }

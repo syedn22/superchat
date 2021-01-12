@@ -13,13 +13,13 @@ import "firebase/analytics";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 firebase.initializeApp({
-  apiKey: "AIzaSyDyvQjpIeQHieHVfpSs4UUhBm0pB9DIb0c",
-  authDomain: "superchat-2444c.firebaseapp.com",
-  projectId: "superchat-2444c",
-  storageBucket: "superchat-2444c.appspot.com",
-  messagingSenderId: "146772142093",
-  appId: "1:146772142093:web:c10ae4cc3036d05d930d44",
-  measurementId: "G-ERQBJ9HLL9",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 });
 
 const auth = firebase.auth();
